@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats 3</title>
+    <style>
+        /* Make the page fill the screen */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Video background */
+        .video-background {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit:fill;
+            z-index: -1;
+        }
+
+        /* Container for the content */
+        .content {
+            position: relative;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Section styles */
+        .section {
+            padding: 60px 0;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1, h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1, h2 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+        .btn1{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .btn2{
+            background-color: #131313;
+            color: #f6f1f1;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+
+        }
+        .nav__logo {
+             display: flex;
+             width: auto;
+             height: auto;
+
+            }
+          
+            .text {
+            font-family: 20px; /* Large, eye-catching size */
+              font-weight: bolder;
+             color: #f2ebe8; /* Vibrant pink, adds energy */
+             letter-spacing: 2px; /* Space between letters for modern feel */
+             text-transform: uppercase; /* Makes text stand out more */
+             text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2); /* Soft shadow for 3D effect */
+             animation: textGlitch 1.7s infinite alternate; /* Animation for attention */
+        }
+        .music-subtitle {
+            text-transform: uppercase; /* Makes text stand out more */
+            text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2); /* Soft shadow for 3D effect */
+    color: #ffb74d; /* Soft gold for a calming feel */
+    margin-top: 10px;
+    animation: fadeIn 3s ease-in-out forwards; /* Fades in */
+    animation: textGlitch 1.7s infinite alternate; /* Animation for attention */
+}
+        /* Animation for glitch effect */
+@keyframes textGlitch {
+    0% {
+        text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.1);
+        transform: translateX(0);
+    }
+    25% {
+        text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3);
+        transform: translateX(8px);
+    }
+    50% {
+        text-shadow: 6px 6px 12px rgba(255, 255, 255, 0.5);
+        transform: translateX(-8px);
+    }
+    75% {
+        text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.2);
+        transform: translateX(8px);
+    }
+    100% {
+        text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.1);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+            
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video class="video-background" infinte loop autoplay unmuted>
+        <source src="../videos/26.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <a href="../index.html" class="nav__logo">
+        <img src="assets/img/logo.png" alt="">
+        <p class="text"> ____Feel the beats of life</p>
+        <p class="music-subtitle">🎶</p>
+    </a>
+ 
+
+    
+
+</body>
+</html>

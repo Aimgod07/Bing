@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Headphones Showcase</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body style */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background-image.jpg') no-repeat center center fixed; /* Background image */
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        /* Glass background style */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background for glass effect */
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            height: 70%;
+            margin: 20px;
+        }
+
+        /* Individual headphone item styling */
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.4); /* Slight opacity for glass effect */
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 15px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-container {
+            width: 100%;
+            padding: 1px;
+            height: 40%;
+            margin-bottom: 10px;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .description-container {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .description-container h3 {
+            color: #f8a700; /* Highlighted title color */
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .description-container p {
+            color: #ddd;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .highlight-text {
+            background-color: #f8a700; /* Highlighted text background */
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .item {
+                width: 90%;
+                margin: 10px 0;
+            }
+        }
+        .btn1{
+            background-color: #131313;
+            color: #f6f1f1;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Headphone 1 -->
+        <div class="item">
+            <div class="video-container">
+                <video controls>
+                    <source src="../videos/25.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description-container">
+                <h3>Beats 3</h3>
+                <p>The <span class="highlight-text"> Vasundara edition</span> offer crystal-clear sound with a deep bass experience. These are ideal for both casual listening and gaming.</p>
+                <button type="button" class="btn1" onclick="window.location.href='beats3.html'">See More</button>
+            </div>
+        </div>
+
+        <!-- Headphone 2 -->
+        <div class="item">
+            <div class="video-container">
+                <video controls>
+                    <source src="../videos/24.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description-container">
+                <h3 >Rx Limited edition</h3>
+                <p>The <span class="highlight-text">Special Collab Wireless</span> headphones provide superior wireless connectivity and noise-canceling technology. Enjoy seamless music experience.</p>
+                <button type="button" class="btn1" onclick="window.location.href='../xbox.html'">See More</button>
+            </div>
+        </div>
+
+        <!-- Headphone 3 -->
+        <div class="item">
+            <div class="video-container">
+                <video controls>
+                    <source src="../videos/23.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description-container">
+                <h3> Didiw SG Headset</h3>
+                <p>The <span class="highlight-text"> Gaming Headset</span> offers an immersive gaming experience with its high-quality audio and adjustable microphone.</p>
+                <button type="button" class="btn1" onclick="window.location.href='gaming.html'">See More</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

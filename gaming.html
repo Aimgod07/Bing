@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats 3</title>
+    <style>
+        /* Make the page fill the screen */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Video background */
+        .video-background {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit:fill;
+            z-index: -1;
+        }
+
+        /* Container for the content */
+        .content {
+            position: relative;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Section styles */
+        .section {
+            padding: 60px 0;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1, h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1, h2 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+        .btn1{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video class="video-background" infinte loop autoplay unmuted>
+        <source src="../videos/23.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Content Section -->
+    <div class="content">
+        <div class="section">
+            <h1>DIDIW SG Headset</h1>
+            <p>Experience the ultimate in gaming audio with the  Wireless Headphones. Whether you're playing your favorite games or chatting with your girlfriend, enjoy crystal-clear sound and comfortable design.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Features</h2>
+            <p>These headphones offer amazing features such as:</p>
+            <ul style="list-style-type: none; padding: 0;">
+                <li>Noise-cancelling technology for immersive gameplay</li>
+                <li>Customizable sound settings with the Xbox app</li>
+                <li>Comfortable memory foam ear cushions for long gaming sessions</li>
+                <li>Wireless connection for seamless Xbox and PC use</li>
+                <li>Built-in microphone for clear communication with teammates</li>
+                <button class="btn1" onclick="window.location.href='index.html'">Buy Now</button>
+            </ul>
+        </div>
+
+</body>
+</html>
